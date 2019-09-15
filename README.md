@@ -8,7 +8,7 @@ uses constraint propagation to solve it. Here are the steps the code takes:
 2. Finds the largest contour in the image. We assume this is our sudoku puzzle grid. 
 3. Geometrically transforms the image so that large contour is squared and centered.
 4. Splits the image into 9 by 9 cells. 
-5. Look for contours in each cell. We don't include any contours so small they are likely noise. Also avoids contours close to
+5. Look for contours in each cell. I don't include any contours so small they are likely noise. I also avoid contours close to
 outer portion of cell since those are likely parts of the sudoku grid. Now we have our digit images.
 6. Resize and center the digit images.
 7. Use a convolutional neural network to identify the digits.
@@ -31,6 +31,13 @@ sudocnn.py trains the convnet model. It also gives the loss and accurary of our 
 validation datasets.
 
 The file ckpt in the sudoku dataset folder is a copy of our trained convnet model. It has  accuracy %99.65 on the test set.
+
+
+#### Sample Input
+![input](https://github.com/aizsak/Sudoku-Image-Reader/blob/master/sampleinput.jpg)
+
+#### Sample Output
+![output](https://github.com/aizsak/Sudoku-Image-Reader/blob/master/sampleoutput.png)
 
 ### Acknowledgment
 The sudoku dataset is composed of sudoku images created and labeled by Baptiste Wicht, you can find their dataset at 
