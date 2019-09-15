@@ -216,7 +216,6 @@ def drawSolution(img, labels, solution):
 
 
 if __name__ == "__main__":
-    print("here")
     image = raw_input("Enter the file path for an image of a sudoku puzzle: ")
     if cv.imread(image, cv.IMREAD_GRAYSCALE) is None:
         print("Sorry, I can't read that file.")
