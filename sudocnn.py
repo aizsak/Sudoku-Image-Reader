@@ -1,6 +1,7 @@
 
 """
-This file trains our model using the dataset of labelled digits from sudoku puzzles. It also gives the loss and 
+author: Alice Izsak
+sudocnn.py trains our model using the dataset of labelled digits from sudoku puzzles. It also gives the loss and 
 accurary of our model on our testing, training and validation datasets.
 
 If you use this code on your own system, you will need to change the variable parent to be the path for your 
