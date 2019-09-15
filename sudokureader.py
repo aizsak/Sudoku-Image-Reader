@@ -15,7 +15,10 @@ tf.enable_eager_execution()
 
 
 def centerSudoku(image, preprocess = False):
-    #Given an image with a sudoku puzzle in it, returns an image with the sudoku puzzle centered and squared.
+    #Parameters: image, a string containing the file path of an image of a sudoku puzzle.
+    #            preprocess, a boolean. If true the returned image is blurred and has thresholding applied to it.
+    #Returns:    a numpy array, containing the pixel values of the image with the sudoku centered and squared.
+    
     img = cv.imread(image, cv.IMREAD_GRAYSCALE)  
     img = cv.GaussianBlur(img, (5, 5), 0)
 
