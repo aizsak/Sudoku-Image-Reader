@@ -1,11 +1,10 @@
-
-
 """
+author: Alice Izsak
 sudoku.py contains the class sudoku. Each instance represent sudoku puzzles and can be initialized from a list, dict
 or string. Contains methods to solve sudokus, copy sudokus, print sudokus. Also includes a couple methods to 
 independently check the accuracy of the sudoku solver.
-
 """
+
 class Sudoku:
     
     sudRange = [(i,j) for j in range(9) for i in range(9)]
