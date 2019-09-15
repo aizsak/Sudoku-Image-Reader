@@ -33,10 +33,12 @@ validation datasets.
 The file ckpt in the sudoku dataset folder is a copy of our trained convnet model. It has  accuracy %99.65 on the test set.
 
 
-#### Sample Input
+#### Example Input
+
 ![input](https://github.com/aizsak/Sudoku-Image-Reader/blob/master/sampleinput.jpg)
 
-#### Sample Output
+#### Example Output
+
 ![output](https://github.com/aizsak/Sudoku-Image-Reader/blob/master/sampleoutput.png)
 
 ### Acknowledgment
