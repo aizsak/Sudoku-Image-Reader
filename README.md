@@ -2,8 +2,8 @@
 
 #### Overview 
 
-Given an image of a sudoku puzzle identifies the puzzle with tools from opencv, uses a convnet to read the digits and then 
-uses constraint propagation to solve it. More specifically, the code reads the image and solves the puzzle in these steps:
+sudokureader.py takes an image of a sudoku puzzle identifies the puzzle with tools from opencv, uses a convnet to read the digits and then 
+uses constraint propagation to solve it. Here are the steps the code takes:
 1. Preprocesses the image by blurring and performing adaptive thresholding
 2. Finds the largest contour in the image. We assume this is our sudoku puzzle grid. 
 3. Geometrically transforms the image so that large contour is squared and centered.
