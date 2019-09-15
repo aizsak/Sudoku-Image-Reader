@@ -8,7 +8,7 @@ import glob
 import os
 import random
 from shutil import copyfile
-from sudokuread import digitFinder
+from sudokureader import digitFinder
 
 images = glob.glob("Sudoku Dataset/*.jpg")
 
